@@ -1,40 +1,60 @@
+//concatenated variable//
+var firstName = "Sam";
+var lastName = "C";
 
-//function that passes parameters in and out//
-function addNumbers(num1, num2) {  //addNumbers is the function invocation//
-  return num1 + num2;
+var fullName = firstName + " " + lastName;
+console.log(fullName); // Output is Sam C
+
+//if conditional statement//
+var temperature = 65;
+
+if (temperature > 50) {
+    console.log("It's a little warm outside");
+} else if (temperature >= 45 && temperature <= 55) {
+    console.log("It's a nice day.");
+} else {
+    console.log("It's cold outside.");
+}
+//switch statement//
+var dayOfWeek = "Monday";
+var schedule;
+
+switch (dayOfWeek) {
+    case "Monday":
+        schedule = "Get groceries for the week at 9AM";
+        break;
+    case "Tuesday":
+        schedule = "Schedule a doctor's appointment after 12PM ";
+        break;
+    case "Wednesday":
+        schedule = "Go to the gym at 10PM";
+        break;
+    case "Thursday":
+        schedule = "Pay light bill after work at 7PM";
+        break;
+    case "Friday":
+        schedule = "Last minute cleaning in the evening";
+        break;
+    default:
+        schedule = "Nothing planned for today";
 }
 
-var result = addNumbers(5, 3);
-console.log(result); // output is 8//
+console.log("Today's schedule:", schedule);
 
-//An object with multiple properties//
-var person = {
-  firstName: "Sam",
-  lastName: "Cruz",
-  age: 21,
-  gender: "female",
-  email: "iamsam.cruz1@gmail.com"
+//String method//
+String.prototype.toUppercase = function() {
+  return this.toUpperCase();
 };
 
-// Accessing properties from object
-console.log("First Name:", person.firstName);
-console.log("Last Name:", person.lastName);
-console.log("Age:", person.age);
-console.log("Gender:", person.gender);
-console.log("Email:", person.email);
+//output
+var str = "Taylor Swift's music is basic";
+console.log(str.toUppercase()); // Output: "TAYLOR SWIFT'S MUSIC IS BASIC"
 
+//Number Method//
+Number.prototype.customToString = function() {
+  return this.toString();
+};
 
-//string method//
-var str = "hello world";
-var upperCaseStr = str.toUpperCase();
-console.log(upperCaseStr); // Output is HELLO WORLD
-
-//event method//
-var button = document.getElementById("myButton");
-
-// Adding a click event listener to the button
-button.addEventListener("click", function() {         //click is the event//
-    alert("Button clicked!");
-});
-
+var num = 210;
+console.log(num.customToString()); // Output is "210"
 
