@@ -1,0 +1,27 @@
+.changeColor{
+    color:lightblue;
+    font-size: 100px;
+    border: 10px solid lightseagreen;
+    font-family:cursive;
+}
+
+.title {
+color: pink;
+font-size: 140px;
+border: 20px dotted plum;
+font-family: fantasy;
+}
+
+.marvel {
+    color: red;
+    font-size: 120px;
+    border: 5px dashed blue;
+    font-family:sans-serif;
+}
+
+.spurs {
+    color: black;
+    font-size: 120px;
+    border: 5px double silver;
+    font-family: sans-serif;
+}
