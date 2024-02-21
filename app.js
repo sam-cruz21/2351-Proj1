@@ -1,24 +1,24 @@
+let person = {                              //person is the object//
+  name: "Sam",
+  age: 21,
+ 
+  greet: function() {                       //object method//
+    console.log("Hello, my name is " + this.name + " and I am " + this.age + " years old.");
+  }
+};
 
-//DOM CSS//
-const text = document. querySelector(".title");
-const changeColor = document.querySelector(".changeColor");
-const title = document.querySelector(".marvel");
-const spurs = document.querySelector(".spurs");
+console.log(person.name); //Sam//
+console.log(person.age); //21//
 
-text.classList.add("change");
-title.classList.add("change");
-marvel.classList.add("change");
-spurs.classList.add("change");
+person.greet();
 
-//loop for//
-for (let i = 1; i <= 10; i++) {
-  console.log(i);
-}
 
-//loop while//
-let i = 1;
+//array//
+let numbers = [2, 4, 6, 8, 10];
 
-while (i <= 10) {
-  console.log(i);
-  i++;
-}
+//array methods//
+let doubledNumbers = numbers.map(function(num) {
+  return num * 2;
+});
+
+console.log(doubledNumbers); // [4, 8, 12, 16, 20]
